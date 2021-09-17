@@ -4,14 +4,14 @@ export default {
 
   // Global App headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'My Nuxt Application',
+    title: 'Municipalité de Ile-de-Bréhat',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'This is an awesome description of my Nuxt app',
+        content: 'Site de la municipalité de l\'Île-de-Bréhat, bienvenue!',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -23,7 +23,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: ['@nuxtjs/tailwindcss'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: []

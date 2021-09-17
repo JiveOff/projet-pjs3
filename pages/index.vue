@@ -1,3 +1,11 @@
 <template>
-  <Tutorial/>
+  <main>
+    <Sidebar />
+  </main>
 </template>
+
+<script>
+export default {
+  name: "Index"
+}
+</script>
