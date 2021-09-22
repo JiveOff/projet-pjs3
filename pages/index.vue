@@ -3,16 +3,38 @@
     <div class="md:flex flex-col md:flex-row min-h-screen w-full">
       <Sidebar />
       <div class="flex flex-row md:flex-col flex-wrap m-2 h-full md:w-full">
-        <div
-          class="bg-gray-300 rounded-md w-screen sm:w-full text-center shadow-md"
-          :style="{
+        <client-only>
+          <carousel per-page="1">
+            <slide>
+              <div
+                class="bg-gray-300 rounded-md text-center shadow-md h-64"
+                :style="{
             'background-image': `url(${require('@/assets/images/brehat.png')})`
+          }"
+              >
+                <div
+                  class="text-3xl p-10 font-bold tracking-widest text-white uppercase dark-mode:text-white"
+                >
+                  Bienvenue sur le site de la municipalité
+                </div>
+              </div>
+            </slide>
+            <slide>
+              Slide 2 Content
+            </slide>
+          </carousel>
+        </client-only>
+        <div
+          class="bg-gray-300 rounded-md w-screen sm:w-full text-center shadow-md mt-3"
+          style="background-position: 30% 50%;"
+          :style="{
+            'background-image': `url(${require('@/assets/images/mairie.png')})`
           }"
         >
           <div
             class="text-3xl p-10 font-semibold tracking-widest text-white uppercase dark-mode:text-white"
           >
-            Bienvenue sur le site de la municipalité
+            Vos services municipaux
           </div>
           <div class="flex justify-center flex-wrap gap-3 p-5">
             <button
@@ -59,6 +81,34 @@
 
 <script>
 export default {
-  name: "Index"
+  name: "Index",
+  data() {
+    return {
+      carouseldata: [
+        {
+          id: 1,
+          message: 'First message',
+          content(createElement, content) {
+            return createElement('img', {
+              attrs: {
+                src: require('~/assets/images/blason.png'),
+              }
+            })
+          }
+        },
+        {
+          id: 2,
+          message: 'Any message',
+          content(createElement, content) {
+            return createElement('img', {
+              attrs: {
+                src: require('~/assets/images/brehat.png'),
+              }
+            })
+          }
+        }
+      ]
+    }
+  }
 };
 </script>
