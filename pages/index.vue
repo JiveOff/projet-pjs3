@@ -14,43 +14,43 @@
           >
             Bienvenue sur le site de la municipalité
           </div>
-        </div>
-        <div class="flex justify-center flex-wrap gap-3 mt-4">
-          <button
-            class="bg-yellow-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
-          >
-            <font-awesome-icon icon="calendar" /><span class="text-2xl"
-              >Vie quotidienne</span
+          <div class="flex justify-center flex-wrap gap-3 p-5">
+            <button
+              class="bg-yellow-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
             >
-          </button>
-          <button
-            class="bg-red-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
-          >
-            <font-awesome-icon icon="cogs" /><span class="text-2xl"
-              >Vos démarches</span
+              <font-awesome-icon icon="calendar" /><span class="text-2xl"
+            >Vie quotidienne</span
             >
-          </button>
-          <button
-            class="bg-purple-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
-          >
-            <font-awesome-icon icon="address-book" /><span class="text-2xl"
-              >Nous contacter</span
+            </button>
+            <button
+              class="bg-red-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
             >
-          </button>
-          <button
-            class="bg-green-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
-          >
-            <font-awesome-icon icon="phone" /><span class="text-2xl"
-              >Numéros utiles</span
+              <font-awesome-icon icon="cogs" /><span class="text-2xl"
+            >Vos démarches</span
             >
-          </button>
-          <button
-            class="bg-pink-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
-          >
-            <font-awesome-icon icon="phone" /><span class="text-2xl"
-              >L'agenda</span
+            </button>
+            <button
+              class="bg-purple-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
             >
-          </button>
+              <font-awesome-icon icon="address-book" /><span class="text-2xl"
+            >Nous contacter</span
+            >
+            </button>
+            <button
+              class="bg-green-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
+            >
+              <font-awesome-icon icon="phone" /><span class="text-2xl"
+            >Numéros utiles</span
+            >
+            </button>
+            <button
+              class="bg-pink-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
+            >
+              <font-awesome-icon icon="phone" /><span class="text-2xl"
+            >L'agenda</span
+            >
+            </button>
+          </div>
         </div>
       </div>
     </div>
