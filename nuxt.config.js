@@ -23,7 +23,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/fontawesome"],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/axios", "@nuxtjs/fontawesome"],
 
   fontawesome: {
     icons: {
