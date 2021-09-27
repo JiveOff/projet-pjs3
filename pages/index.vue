@@ -7,7 +7,7 @@
           <carousel per-page="1">
             <slide>
               <div
-                class="bg-gray-300 rounded-md text-center shadow-md h-64"
+                class="bg-gray-300 rounded-md text-center shadow-md h-auto"
                 :style="{
             'background-image': `url(${require('@/assets/images/brehat.png')})`
           }"
@@ -16,6 +16,9 @@
                   class="text-3xl p-10 font-bold tracking-widest text-white uppercase dark-mode:text-white"
                 >
                   Bienvenue sur le site de la municipalité
+                  <div class="flex justify-center mt-6">
+                    <Weather />
+                  </div>
                 </div>
               </div>
             </slide>
@@ -32,7 +35,7 @@
           }"
         >
           <div
-            class="text-3xl p-10 font-semibold tracking-widest text-white uppercase dark-mode:text-white"
+            class="text-3xl p-2 pt-6 font-semibold tracking-widest text-white uppercase dark-mode:text-white"
           >
             Vos services municipaux
           </div>
@@ -68,7 +71,7 @@
             <button
               class="bg-pink-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
             >
-              <font-awesome-icon icon="phone" /><span class="text-2xl"
+              <font-awesome-icon icon="calendar-alt" /><span class="text-2xl"
             >L'agenda</span
             >
             </button>
