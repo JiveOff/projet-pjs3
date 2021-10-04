@@ -57,10 +57,10 @@
         href="#"
         >Accueil</a
       > -->
-      <a
+      <nuxt-link
         class="block px-4 py-2 mt-2 text-sm font-semibold text-white bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="#"
-        >Accueil</a
+				to='/'
+        >Accueil</nuxt-link
       >
       <MenuDropDown
         name="La municipalité"
@@ -71,10 +71,10 @@
         ]"
         @opened="$refs.contact.closeDropdown()"
       />
-      <a
+      <nuxt-link
         class="block px-4 py-2 mt-2 text-sm font-semibold text-white bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="#"
-        >Les actualités de l'île</a
+				to='actus'
+        >Les actualités de l'île</nuxt-link
       >
       <MenuDropDown
         name="Nous contacter"

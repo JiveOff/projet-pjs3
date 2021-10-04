@@ -39,7 +39,7 @@
           >
             Vos services municipaux
           </div>
-          <div class="flex justify-center flex-wrap gap-3 p-5">
+          <div class="flex justify-center flex-wrap gap-3 p-3">
             <button
               class="bg-yellow-500 text-white text-3xl flex-1 shadow-md p-4 rounded-lg flex flex-col justify-center items-center gap-3"
             >
