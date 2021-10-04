@@ -1,5 +1,6 @@
 <template>
   <main class="bg-gray-200 h-screen">
+		<GlobalAlert />
     <div class="md:flex flex-col md:flex-row min-h-screen w-full">
       <Sidebar />
       <div class="flex flex-row md:flex-col flex-wrap m-2 h-full md:w-full">
@@ -37,7 +38,7 @@
           <div
             class="text-3xl p-2 pt-6 font-semibold tracking-widest text-white uppercase dark-mode:text-white"
           >
-            Vos services municipaux
+            Liens utiles
           </div>
           <div class="flex justify-center flex-wrap gap-3 p-3">
             <button
