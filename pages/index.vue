@@ -2,8 +2,8 @@
   <main class="bg-gray-200 h-screen">
 		<GlobalAlert />
     <div class="md:flex flex-col md:flex-row min-h-screen w-full">
-      <Sidebar />
       <div class="flex flex-row md:flex-col flex-wrap m-2 h-full md:w-full">
+				<Sidebar />
         <client-only>
           <carousel per-page="1">
             <slide>

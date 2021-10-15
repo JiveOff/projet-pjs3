@@ -1,19 +1,21 @@
 <template>
   <div
-    class="flex flex-col md:w-64 text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0 m-2 rounded-md bg-center shadow-xl"
+    class="flex flex-row w-full text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0 mb-3 rounded-md bg-center shadow-xl"
     :style="{
-      'background-image': `url(${require('@/assets/images/brehat.png')})`
+      'background-image': `url(${require('@/assets/images/brehat.png')})`,
+      'background-repeat': 'no-repeat'
     }"
   >
     <div
-      class="flex-shrink-0 px-8 py-4 flex md:flex-col sm:flex-row md:items-center md:justify-center md:gap-4 sm:flex-shrink-0 sm:items-stretch flex-1"
+			:class='{"flex-col": open, "flex-row": !open}'
+      class="flex-shrink-0 px-8 py-4 flex flex-shrink-0 items-stretch items-left flex-1"
     >
       <img
         src="~/assets/images/blason.png"
         alt="Blason de la municipalité"
         class="block w-10 mb-2"
       />
-      <div class="flex flex-col justify-left ml-5 md:ml-0 md:text-center">
+      <div class="flex flex-row md:flex-col justify-left ml-5">
         <span
           class="text-white text-md font-light tracking-widest uppercase dark-mode:text-black"
           >Municipalité de</span
@@ -50,7 +52,7 @@
     </div>
     <nav
       :class="{ block: open, hidden: !open }"
-      class="flex-grow md:block px-4 pb-4 md:pb-0 md:overflow-y-auto"
+      class="flex-grow flex items-center px-4 pb-4 md:pb-0"
     >
       <!-- <a
         class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
