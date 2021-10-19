@@ -8,37 +8,31 @@
 					</div>
 			    </div>
 			</transition>
-      <transition name="modal">
-        <div class="modal-mask" v-if="popup">
-          <div class="modal-wrapper">
-            <div class="modal-container">
+    		<transition name="modal">
+        		<div class="modal-mask" v-if="popup">
+          			<div class="modal-wrapper">
+            			<div class="modal-container">
 
-              <div class="modal-header">
-                <slot name="header">
-                  default header
-                </slot>
-              </div>
+              				<div class="modal-header">
+								<button class="modal-default-button" @click="popup = false">
+                    				<font-awesome-icon icon="times-circle" />
+                  				</button>
+                				<slot name="header">
+                  					{{ elu.nom }}
+                				</slot>
+              				</div>
 
-              <div class="modal-body">
-                <slot name="body">
-                  default body
-                </slot>
-              </div>
-
-              <div class="modal-footer">
-                <slot name="footer">
-                  default footer
-                  <button class="modal-default-button" @click="$emit('close')">
-                    OK
-                  </button>
-                </slot>
-              </div>
-            </div>
-          </div>
-        </div>
-      </transition>
-	  <modal v-if="popup" @close="popup = false">
-	  </modal>
+              				<div class="modal-body">
+                				<slot name="body">
+                  					{{elu.description}}
+                				</slot>
+              				</div>
+            			</div>
+          			</div>
+        		</div>
+      		</transition>
+	  		<modal v-if="popup" @close="popup = false">
+	  		</modal>
 			<img :src="elu.portrait" style="height: fit-content">
 		</div>
 		<div class="text-left ml-5">
@@ -90,19 +84,20 @@ export default {
 }
 
 .modal-container {
-  width: 300px;
+  width: 450px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: #fff;
-  border-radius: 2px;
+  border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.modal-header h3 {
+.modal-header {
   margin-top: 0;
-  color: #42b983;
+  color: #1A237E;
+  font-size: 170%;
 }
 
 .modal-body {
