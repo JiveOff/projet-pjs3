@@ -1,9 +1,5 @@
 <template>
-  <main class="bg-gray-200 h-screen">
-		<GlobalAlert />
-    <div class="md:flex flex-col md:flex-row min-h-screen w-full">
-      <div class="flex flex-row md:flex-col flex-wrap m-2 h-full md:w-full">
-				<Sidebar />
+	<div>
         <client-only>
           <carousel per-page="1">
             <slide>
@@ -78,9 +74,7 @@
             </button>
           </div>
         </div>
-      </div>
-    </div>
-  </main>
+	</div>
 </template>
 
 <script>

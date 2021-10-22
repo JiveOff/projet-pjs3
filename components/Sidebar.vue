@@ -7,7 +7,7 @@
     }"
   >
     <div
-			:class='{"flex-col": open, "flex-row": !open}'
+			:class='{"sm:flex-col": open, "sm:flex-row": !open}'
       class="flex-shrink-0 px-8 py-4 flex flex-shrink-0 items-stretch items-left flex-1"
     >
       <img
@@ -15,7 +15,7 @@
         alt="Blason de la municipalité"
         class="block w-10 mb-2"
       />
-      <div class="flex flex-row md:flex-col justify-left ml-5">
+      <div class="flex flex-col justify-left ml-5">
         <span
           class="text-white text-md font-light tracking-widest uppercase dark-mode:text-black"
           >Municipalité de</span
@@ -51,8 +51,7 @@
       </button>
     </div>
     <nav
-      :class="{ block: open, hidden: !open }"
-      class="flex-grow flex items-center px-4 pb-4 md:pb-0"
+      class="flex-grow flex items-center px-4 pb-4 md:pb-0 sm:hidden"
     >
       <!-- <a
         class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"

@@ -1,23 +1,18 @@
 <template>
-	<main class="bg-gray-200 h-full">
-		<div class="md:flex flex-col md:flex-row min-h-screen w-full">
-			<Sidebar />
-			<div class="flex flex-row md:flex-col flex-wrap m-2 h-full md:w-full">
-				<div
-					class="bg-white rounded-md w-screen sm:w-full text-center shadow-md mb-5 pb-4"
-				>
-					<div
-						class="text-3xl p-2 pt-6 font-semibold tracking-widest uppercase"
-					>
-						Vos élus
-					</div>
-				</div>
-				<div class="flex justify-center flex-wrap gap-5">
-					<elu v-for="elu in elus" :key="elu.nom" :elu="elu" class='shadow-md bg-white rounded-md p-3' style='flex: 2 1 auto;' />
-				</div>
+	<div>
+		<div
+			class="bg-white rounded-md w-screen sm:w-full text-center shadow-md mb-5 pb-4"
+		>
+			<div
+				class="text-3xl p-2 pt-6 font-semibold tracking-widest uppercase"
+			>
+				Vos élus
 			</div>
 		</div>
-	</main>
+		<div class="flex justify-center flex-wrap gap-5">
+			<elu v-for="elu in elus" :key="elu.nom" :elu="elu" class='shadow-md bg-white rounded-md p-3' style='flex: 2 1 auto;' />
+		</div>
+	</div>
 </template>
 
 <script>
