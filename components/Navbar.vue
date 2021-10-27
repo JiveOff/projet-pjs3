@@ -117,7 +117,7 @@ export default {
 				},
 				{
 					name: 'Numéros utiles',
-					path: '/',
+					path: 'numeros',
 				},
 				{
 					name: 'Agenda',
@@ -125,7 +125,7 @@ export default {
 				},
 				{
 					name: 'Contact',
-					path: '/',
+					path: 'contact',
 				},
 			],
 		};
