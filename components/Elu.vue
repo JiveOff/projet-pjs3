@@ -11,7 +11,7 @@
 					class="absolute rounded-full w-24 h-24 bg-blue-900 opacity-70 text-white flex items-center justify-center cursor-pointer"
 					@click="openModal"
 				>
-					<div class='text-5xl'>
+					<div class="text-5xl">
 						<font-awesome-icon icon="search" />
 					</div>
 				</div>
@@ -31,7 +31,8 @@
 
 							<div class="modal-body">
 								<slot name="body">
-									{{ elu.description }}
+									<img :src="elu.portrait" style="width: 20%; margin-right: 20px; float: right;" />
+									<span>{{ elu.description }}</span>
 								</slot>
 							</div>
 						</div>
@@ -105,7 +106,6 @@ export default {
 	border-radius: 20px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
 	transition: all 0.3s ease;
-	font-family: Helvetica, Arial, sans-serif;
 }
 
 .modal-header {

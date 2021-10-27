@@ -4,7 +4,8 @@
 		<div class="md:flex flex-col md:flex-row min-h-screen w-full">
 			<div class="flex flex-row md:flex-col flex-wrap m-2 h-full md:w-full">
 				<Navbar />
-				<router-view />
+				<transition name="fade" mode="out-in"><router-view></router-view></transition>
+				<Footer />
 			</div>
 		</div>
 	</main>
@@ -22,10 +23,10 @@ body {
 }
 
 .slide-fade-enter-active {
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 }
 .slide-fade-leave-active {
-	transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+	transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 .slide-fade-enter, .slide-fade-leave-to
 	/* .slide-fade-leave-active below version 2.1.8 */ {
