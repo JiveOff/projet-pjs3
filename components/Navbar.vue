@@ -1,11 +1,14 @@
 <template>
 	<nav
-		class="bg-white shadow-lg w-full rounded-md rounded-br-none rounded-bl-none transition-all"
-		:class="$nuxt.$route.name == 'index' ? 'text-white' : 'text-black'"
+		class="bg-white shadow-lg w-full rounded-md transition-all"
+		:class="
+			$nuxt.$route.name == 'index' ? 'text-white' : 'text-black rounded-br-none rounded-bl-none'
+		"
 		:style="{
 			'background-image':
 				$nuxt.$route.name == 'index' ? `url(${require('@/assets/images/brehat.png')})` : '',
 			'background-repeat': 'no-repeat',
+			'background-position': '50% 50%',
 			'background-size': 'cover',
 		}"
 	>
