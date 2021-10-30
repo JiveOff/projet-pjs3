@@ -51,16 +51,30 @@
 								'background-size': 'cover',
 							}"
 						>
-							<nuxt-link
-								v-for="route in routes"
-								:key="route.name"
-								:to="route.path"
-								class="py-4 px-2 transition duration-75"
-								:class="
-									$nuxt.$route.name == route.path ? 'border-b-4 border-white-500 font-semibold' : ''
-								"
-								>{{ route.name }}</nuxt-link
-							>
+							<span v-for="route in routes" :key="route.name">
+								<nuxt-link
+									v-if="route.path.includes('http') === -1"
+									:to="route.path"
+									class="py-4 px-2 transition duration-75"
+									:class="
+										$nuxt.$route.name == route.path
+											? 'border-b-4 border-white-500 font-semibold'
+											: ''
+									"
+									>{{ route.name }}</nuxt-link
+								>
+								<a
+									v-else
+									:href="route.path"
+									class="py-4 px-2 transition duration-75"
+									:class="
+										$nuxt.$route.name == route.path
+											? 'border-b-4 border-white-500 font-semibold'
+											: ''
+									"
+									>{{ route.name }}</a
+								>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -87,11 +101,20 @@
 		<div :class="{ hidden: !mobileMenu }" class="md:hidden">
 			<ul class="bg-white text-black">
 				<li v-for="route in routes" :key="route.name">
-					<nuxt-link :to="route.path" class="block text-sm px-2 py-4 font-semibold"
+					<nuxt-link
+						v-if="route.path.indexOf('http') == -1"
+						:to="route.path"
+						class="block text-sm px-2 py-4 font-semibold"
 						><span
 							:class="{ 'font-bold border-b-2 border-black': $nuxt.$route.name == route.path }"
 							>{{ route.name }}</span
 						></nuxt-link
+					>
+					<a v-else :href="route.path" class="block text-sm px-2 py-4 font-semibold"
+						><span
+							:class="{ 'font-bold border-b-2 border-black': $nuxt.$route.name == route.path }"
+							>{{ route.name }}</span
+						></a
 					>
 				</li>
 			</ul>
@@ -115,16 +138,12 @@ export default {
 					path: 'elus',
 				},
 				{
-					name: 'Vos services',
-					path: '/',
-				},
-				{
 					name: 'Numéros utiles',
 					path: 'numeros',
 				},
 				{
-					name: 'Agenda',
-					path: '/',
+					name: 'Office du tourisme',
+					path: 'https://www.facebook.com/officedutourismedebrehat',
 				},
 				{
 					name: 'Contact',
