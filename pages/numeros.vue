@@ -1,6 +1,6 @@
 <template>
-    <div>
-    	<div
+	<div>
+		<div
 			class="bg-white rounded-md rounded-tr-none rounded-tl-none text-center shadow-md mb-5 pb-4"
 		>
 			<div class="text-3xl p-2 pt-6 font-semibold tracking-widest uppercase">
@@ -16,16 +16,16 @@
 				'background-position': '50% -116px',
 			}"
 		>
-            <Num />
-        </div>
-    </div>
+			<Num />
+		</div>
+	</div>
 </template>
 
 <script>
-import Num from '../components/Num.vue'
+import Num from '../components/Num.vue';
 
 export default {
-    components: { Num },
-    name: 'Numéros utiles',
-}
+	components: { Num },
+	name: 'NumUtiles',
+};
 </script>

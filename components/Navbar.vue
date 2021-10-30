@@ -53,7 +53,7 @@
 						>
 							<span v-for="route in routes" :key="route.name">
 								<nuxt-link
-									v-if="route.path.includes('http') === -1"
+									v-if="route.path.indexOf('http') === -1"
 									:to="route.path"
 									class="py-4 px-2 transition duration-75"
 									:class="

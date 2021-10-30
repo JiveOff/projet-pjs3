@@ -3,10 +3,10 @@
 		<client-only>
 			<carousel
 				ref="carousel"
-				per-page="1"
-				autoplay="true"
-				autoplayTimeout="5000"
-				autoplayHoverPause="true"
+				:per-page="1"
+				:autoplay="true"
+				:autoplayTimeout="5000"
+				:autoplayHoverPause="true"
 				paginationColor="#a8a8a8"
 				paginationActiveColor="black"
 				@pageChange="changePage"
