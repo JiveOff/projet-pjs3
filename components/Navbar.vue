@@ -98,7 +98,7 @@
 			</div>
 		</div>
 		<!-- mobile menu -->
-		<div :class="{ hidden: !mobileMenu }" class="md:hidden">
+		<div :class="{ hidden: !mobileMenu }" class="md:hidden rounded-md">
 			<ul class="bg-white text-black">
 				<li v-for="route in routes" :key="route.name">
 					<nuxt-link
