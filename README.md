@@ -1,19 +1,14 @@
-# Nuxt.js Example
+# Projet PJS3: Île-De-Bréhat
 
-This directory is a brief example of a [Nuxt.js](https://nuxtjs.org) app that can be deployed with Vercel and zero configuration.
+Le but de ce projet était de refaire le site de la municipalité de l'Île-de-Bréhat.
 
-## Deploy Your Own
+## Installer le projet localement
 
-Deploy your own Nuxt.js project with Vercel.
+Clonez le projet localement:
+```git clone https://github.com/JiveOff/projet-pjs3.git```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/nuxtjs&template=nuxtjs)
+Installez les dépendances:
+```npm install```
 
-_Live Example: https://nuxtjs.now-examples.vercel.app/_
-
-### How We Created This Example
-
-To get started with Nuxt.js deployed with Vercel, you can use the [Create-Nuxt-App CLI](https://www.npmjs.com/package/create-nuxt-app) to initialize the project:
-
-```shell
-$ npx create-nuxt-app my-app
-```
+Démarrez le serveur:
+```npm run start```
