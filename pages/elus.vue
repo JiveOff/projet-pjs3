@@ -13,7 +13,7 @@
 				'background-image': `url(${require('@/assets/images/brehat.png')})`,
 				'background-size': 'cover',
 				'background-repeat': 'no-repeat',
-				'background-position': '50% -116px',
+				'background-position': '50% 50%',
 			}"
 		>
 			<elu

@@ -12,11 +12,19 @@
 				@pageChange="changePage"
 			>
 				<slide>
-					<div class="rounded-md text-center sm:text-left h-auto">
+					<div
+						class="rounded-md text-center sm:text-left h-auto"
+						:style="{
+							'background-image': `url(${require('@/assets/images/mairie.png')})`,
+							'background-repeat': 'no-repeat',
+							'background-size': 'cover',
+							'background-position': '50% 50%',
+						}"
+					>
 						<div
-							class="text-3xl p-10 font-bold tracking-widest text-black uppercase flex flex-col md:flex-row gap-8 items-center dark-mode:text-white"
+							class="bg-black bg-opacity-30 rounded-md text-3xl p-10 font-bold tracking-widest text-black uppercase flex flex-col md:flex-row gap-8 items-center dark-mode:text-white"
 						>
-							<div class="flex-grow">
+							<div class="bg-white rounded-md shadow-md p-6 flex-grow">
 								Bienvenue sur le site de la municipalité de l'<b>Île-de-Bréhat</b>
 								<div class="mt-5 text-xl font-normal flex flex-col items-center md:items-start">
 									La mairie est à votre écoute et à votre disposition pour toutes vos questions.
@@ -35,25 +43,26 @@
 									</button>
 								</div>
 							</div>
-							<div
-								class="flex justify-center mt-6 p-5 rounded-md h-full"
-								:style="{
-									'background-image': `url(${require('@/assets/images/brehat.png')})`,
-									'background-repeat': 'no-repeat',
-									'background-position': '50% -116px',
-								}"
-							>
+							<div class="bg-white bg-opacity-50 flex justify-center mt-6 p-5 rounded-md h-full">
 								<Weather />
 							</div>
 						</div>
 					</div>
 				</slide>
 				<slide>
-					<div class="rounded-md text-center sm:text-left h-auto">
+					<div
+						class="rounded-md text-center sm:text-left h-auto"
+						:style="{
+							'background-image': `url(${require('@/assets/images/brehat.png')})`,
+							'background-repeat': 'no-repeat',
+							'background-size': 'cover',
+							'background-position': '50% 50%',
+						}"
+					>
 						<div
-							class="text-3xl p-10 font-bold tracking-widest text-black uppercase flex flex-col md:flex-row gap-8 items-center dark-mode:text-white"
+							class="bg-black bg-opacity-30 rounded-md text-3xl p-10 font-bold tracking-widest text-black uppercase flex flex-col md:flex-row gap-8 items-center dark-mode:text-white"
 						>
-							<div>
+							<div class="bg-white rounded-md shadow-md p-6">
 								Découvrez l'<b>Île-de-Bréhat</b>
 								<div class="mt-5 text-xl font-normal flex flex-col items-center md:items-start">
 									L'Île vous offre un cadre paradisiaque et convivial. Reservez vos places dans nos
@@ -65,14 +74,7 @@
 									</button>
 								</div>
 							</div>
-							<div
-								class="flex justify-center mt-6 p-5 rounded-md h-full"
-								:style="{
-									'background-image': `url(${require('@/assets/images/brehat.png')})`,
-									'background-repeat': 'no-repeat',
-									'background-position': '50% -116px',
-								}"
-							>
+							<div class="bg-white bg-opacity-50 flex justify-center mt-6 p-5 rounded-md h-full">
 								<iframe
 									class="w-full md:w-96"
 									height="318"
@@ -87,13 +89,23 @@
 					</div>
 				</slide>
 				<slide>
-					<div class="rounded-md text-center h-auto">
+					<div
+						class="rounded-md text-center h-auto"
+						:style="{
+							'background-image': `url(${require('@/assets/images/mairie.png')})`,
+							'background-repeat': 'no-repeat',
+							'background-size': 'cover',
+							'background-position': '50% 50%',
+						}"
+					>
 						<div
-							class="text-3xl p-10 font-bold tracking-widest text-black uppercase flex flex-col gap-8 items-center dark-mode:text-white"
+							class="bg-black bg-opacity-30 rounded-md text-3xl p-10 font-bold tracking-widest text-black uppercase flex flex-col gap-8 items-center dark-mode:text-white"
 						>
-							"Sans doute l'une des plus belles îles de France"
-							<div class="text-xl font-normal">
-								Recommandé par le site "Stereden"
+							<div class="bg-white rounded-md shadow-md p-6">
+								"Sans doute l'une des plus belles îles de France"
+								<div class="text-xl font-normal">
+									Recommandé par le site "Stereden"
+								</div>
 							</div>
 							<div class="flex flex-col md:flex-row gap-4">
 								<div
